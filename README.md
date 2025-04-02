@@ -1,5 +1,5 @@
 # elevatorsaga-code
-This is my attempt at the Elevator Saga game.
+This is my attempt at the [Elevator Saga](https://play.elevatorsaga.com/) game.
 The code is kept separated from the object format imposed by the game because I like it better that way. Sue me.
 
 ## How To Use This Code
