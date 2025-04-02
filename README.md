@@ -8,23 +8,24 @@ Replace the Javascript code in the input area from the Elevator Saga game with t
 
     {
         init: function(elevators, floors) {
-            var script = document.createElement('script');
+            const script = document.createElement('script');
             script.type = 'module';
             script.src = 'https://luigivieira.github.io/elevatorsaga-code/main.js';
-            script.onload = function() {
+            script.onload = function () {
                 if (typeof window.init === 'function') {
                     window.init(elevators, floors);
                 }
             };
             document.head.appendChild(script);
         },
-            
+
         update: function(dt, elevators, floors) {
             if (typeof window.update === 'function') {
                 window.update(dt, elevators, floors);
             }
         }
     }
+
 
 This defines the expected object from the game with the two functions `init` and `update`, but running them from the global references defined in the `window` object
 by the external script loaded from Github pages. This doesn't add any latency to the game as the game timer only starts *after* the `init` function is
