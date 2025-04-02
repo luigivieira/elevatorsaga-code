@@ -9,7 +9,6 @@ Replace the Javascript code in the input area from the Elevator Saga game with t
     {
         init: function(elevators, floors) {
             const script = document.createElement('script');
-            script.type = 'module';
             script.src = 'https://luigivieira.github.io/elevatorsaga-code/main.js';
             script.onload = function () {
                 if (typeof window.init === 'function') {
